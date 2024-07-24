@@ -1,0 +1,8 @@
+
+model: MACE
+num_interactions: 2 
+num_channels: 32
+max_L: 0
+correlations: 2 
+r_max: 4.0
+max_ell: 2

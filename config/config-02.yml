@@ -1,0 +1,24 @@
+    
+model: "MACE" 
+num_interactions: 2 
+num_channels: 32 
+max_L: 0 
+correlation: 2 
+r_max: 4.0 
+max_ell: 2 
+name: "mace01" 
+model_dir: "MACE_models" 
+log_dir: "MACE_models" 
+checkpoints_dir: "MACE_models" 
+results_dir: "MACE_models" 
+train_file: "data/solvent_xtb_train_200.xyz" 
+valid_fraction: 0.10 
+test_file: "data/solvent_xtb_test.xyz" 
+E0s: "average" 
+energy_key: "energy_xtb" 
+forces_key: "forces_xtb" 
+device: cuda 
+batch_size: 10 
+max_num_epochs: 50 
+swa: True 
+seed: 123
